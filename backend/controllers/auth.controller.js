@@ -141,3 +141,5 @@ export const RefreshTokenController = async (req, res) => {
         return res.status(500).json({ message: "Internal server error during token refresh" });
     }
 }
+
+export const getProfileController = async (req, res) => {}
