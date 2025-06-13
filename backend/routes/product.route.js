@@ -1,7 +1,15 @@
 import express from 'express';
 const router = express.Router();
 import { protectRoute,adminRoute} from '../middleware/auth.middleware.js';
-import { getAllProductsController ,getFeaturedProducts,toggleFeaturedProduct,getProductsByCategory,createProduct,deleteProduct,getRecommendedProducts} from '../controllers/product.controller.js';
+import { getAllProductsController,
+    getFeaturedProducts,
+    toggleFeaturedProduct,
+    getProductsByCategory,
+    createProduct,
+    deleteProduct,
+    getRecommendedProducts
+}
+     from '../controllers/product.controller.js';
 
 router.get("/", protectRoute,adminRoute,getAllProductsController);
 router.get("/featured",getFeaturedProducts);
