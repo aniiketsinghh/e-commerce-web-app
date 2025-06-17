@@ -6,7 +6,7 @@ router.post("/signup", SignUpController);
 router.post("/login", LoginController);
 router.post("/logout", LogoutController);
 router.post("/refreshtoken", RefreshTokenController);
-router.post("/profile", getProfileController);
+router.get("/profile", getProfileController);
 
 
 export default router;
